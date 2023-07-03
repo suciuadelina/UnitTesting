@@ -33,7 +33,7 @@ public class IsPositiveTest {
 
     //Tema ex. 1
     @ParameterizedTest
-    @ValueSource(doubles = {-1.1,-3.5,-2.8,Double.MAX_VALUE})
+    @ValueSource(doubles = {-1.1,-3.5,-2.8,-5.8})
     public void checkIsPositiveParametrized2(double numberFromValues){
         IsPositive numberToCheck = new IsPositive();
         boolean result = numberToCheck.isPositive(numberFromValues);

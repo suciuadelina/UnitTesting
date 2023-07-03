@@ -31,5 +31,23 @@ public class CalculatorTest {
     }
 
     //Tema ex. 3
+    @Test
+    public void checkdif(){
+        double result = calculator.dif(8.00,2.00);
+        Assertions.assertEquals(6.00,result);
+    }
+
+    @Test
+    public void checkcat(){
+        double result = calculator.cat(8.00,3.00);
+        int result2=(int)result;
+        Assertions.assertEquals(2.00,result2);
+    }
+
+    @Test
+    public void checkmod(){
+        double result = calculator.mod(5.00,2.00);
+        Assertions.assertEquals(1.00,result);
+    }
 
 }
